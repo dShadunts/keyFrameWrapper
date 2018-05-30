@@ -1,0 +1,52 @@
+/* Styling of the box */
+
+.box {
+    height: 180px;
+    width: 200px;
+    background: red;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+/* Styling of the triangle */
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+    position: absolute;
+}
+
+/* START Styling of the Heart */
+
+.heart {
+    position: absolute;
+    width: 160px;
+    height: 130px;
+
+}
+
+.heart:before,
+.heart:after {
+    position: absolute;
+    content: "";
+    left: 80px;
+    top: 0;
+    width: 80px;
+    height: 120px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* END Styling of the Heart */

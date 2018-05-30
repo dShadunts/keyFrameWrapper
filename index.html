@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyframe animation</title>
+        <link rel="stylesheet" type="text/css" href="basic-style.css">
+        <script src="animation-setup.js"></script>
+        <script src="animation-properties-configs.js"></script>
+        <script src="animated-element.js"></script>
+        <script src="helper-functions.js"></script>
+    </head>
+    <body>
+        <div style="margin-top: 20px">
+            <div id="boxToAnimate" class="box">Box</div>
+            <div style="margin-left: 600px; top: 10px">
+                <button id="playPauseBox" style="display: block;">Play/Pause Box</button>
+                <label for="seekBox">Seek Box: </label>
+                <input id="seekBox" type="range" step="0.0001">
+            </div>
+        </div>
+        <div style="margin-top: 150px">
+            <div id="triangleToAnimate" class="triangle"></div>
+            <div style="margin-left: 600px">
+                <button id="playPauseTriangle" style="display: block;">Play/Pause Triangle</button>
+                <label for="seekTriangle">Seek Triangle: </label>
+                <input id="seekTriangle" type="range" step="0.1">
+            </div>
+        </div>
+        <div style="margin-top: 150px">
+            <div id="heartToAnimate" class="heart"></div>
+            <div style="margin-left: 600px">
+                <span>Never play with heart beat</span>
+            </div>
+        </div>
+    </body>
+</html>
